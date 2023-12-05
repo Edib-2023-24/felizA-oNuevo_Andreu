@@ -41,28 +41,27 @@
     <script></script>
     <!-- Scripts a cargar antes de la renderización -->
     <script src="preloader.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;700&display=swap');
+</style>
   </head>
   <body>
-    <div id="container">
-      <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-      <!-- Header (encabezado de la página, zona superior) -->
-      <header>
-        <!-- nav (el navegador de toda la web) -->
-        <nav>
-          <a href="" class="link1">link1</a>
-          <a href="" class="link2">link2</a>
-          <a href="" class="link3">link3</a>
-          <a href="" class="link4">link4</a>
-        </nav>
-      </header>
-      <!-- Main (centro de la página, zona central) -->
-      <main>
-        <!-- section y article (posibilidades dentro de main) -->
-      </main>
-      <!-- Footer (final de la página, zona inferior) -->
-      <footer>
-        <h6>&copy;Copyright</h6>
-      </footer>
+    <div class="container" id="container">
+
+      <section class="contador">
+
+        <section class="contenedor__contador">
+          <section class="barra" id="barra"></section>
+          <section class="num__minutos" id="num_minutos">27</section>
+          <section class="num__horas" id="num_horas">06</section>
+          <section class="num__dias" id="num_dias">03</section>
+          <section class="minutos">minutos</section>
+          <section class="horas">horas</section>
+          <section class="dias">días</section>
+        </section>
+
+      </section>
+
     </div>
 
   </body>

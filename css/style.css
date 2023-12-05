@@ -6,14 +6,114 @@
 /* *** ESTILOS GENERALES *** */
 /* *********************************** */
 
-/* Tipografía */
-@font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+:root {
+  /* Mode 1 */
+  /* colors */
+  --color-amarillo: #dfa704;
+  --color-amarillomedio: #b97d04;
+  --color-amarillooscuro: #785102;
+  --color-amarilloquemado: #715d36;
 }
 
-/* ******************************** */
+.container {
+  height: 100vh;
+  background: url(/img/desktop/Frame\ 3fondo.jpg) no-repeat center;
+  background-size: cover;
+  margin: 0 auto;
+  font-family: "Hind", sans-serif;
 
-/* Colores */
+  & .contenedor__contador {
+    width: 300px;
+    height: 380px;
+    padding-top: 20px;
 
-/* ******************************** */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+
+    & .barra {
+      padding: 0 18px;
+      grid-column: 1/2;
+      grid-row: 1/-1;
+      background: rgb(223, 167, 4);
+      background: linear-gradient(
+        180deg,
+        var(--color-amarillo) 0%,
+        var(--color-amarillomedio) 33%,
+        var(--color-amarillooscuro) 66%,
+        var(--color-amarilloquemado) 100%
+      );
+    }
+
+    & .num__minutos {
+      grid-column: 2/4;
+      grid-row: 1/2;
+      color: var(--color-amarillomedio);
+      font-size: 100px;
+      line-height: 0.55;
+      font-weight: bold;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    & .minutos {
+      grid-column: 5/-1;
+      grid-row: 1/2;
+      color: var(--color-amarillomedio);
+      font-size: 30px;
+      line-height: 0.7;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    & .num__horas {
+      grid-column: 2/4;
+      grid-row: 2/3;
+      color: var(--color-amarillooscuro);
+      font-size: 100px;
+      line-height: 0.55;
+      font-weight: bold;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    & .horas {
+      grid-column: 5/-1;
+      grid-row: 2/3;
+      color: var(--color-amarillooscuro);
+      font-size: 30px;
+      line-height: 0.7;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    & .num__dias {
+      grid-column: 2/4;
+      grid-row: 3/-1;
+      color: var(--color-amarilloquemado);
+      font-size: 100px;
+      line-height: 0.55;
+      font-weight: bold;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    & .dias {
+      grid-column: 5/-1;
+      grid-row: 3/-1;
+      color: var(--color-amarilloquemado);
+      font-size: 30px;
+      line-height: 0.7;
+
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
